@@ -96,23 +96,56 @@
            // }
 
 
-           robotArm.grab();
-           if (robotArm.scan()== "blue"){for (var a=0; a<5; a++){robotArm.moveRight();} robotArm.drop(); for(b=0; b<4; b++){robotArm.moveLeft();}}
+           // robotArm.grab();
+           // if (robotArm.scan()== "blue"){
+           //   for (var a=0; a<5; a++){
+           //     robotArm.moveRight();
+           //   }
+           //   robotArm.drop();
+           // for(b=0; b<4; b++){robotArm.moveLeft();}}
+           //
+           // for(c=0; c<2; c++){
+           //   robotArm.grab();
+           //   if (robotArm.scan()== "green"){for (a=0; a<5; a++){robotArm.moveRight();}robotArm.drop(); for(a=0; a<5; a++){robotArm.moveLeft();}} }
+           //   robotArm.moveRight();
+           //
+           //   for(d=0; d<3; d++){
+           //     robotArm.grab();
+           //     if (robotArm.scan()== "white"){for (a=0; a<5; a++){robotArm.moveRight();}robotArm.drop(); for(a=0; a<5; a++){robotArm.moveLeft();}} }
+           //     robotArm.moveRight();
+           //
+           //     for(e=0; e<4; e++){
+           //       robotArm.grab();
+           //       if (robotArm.scan()== "red"){for (a=0; a<5; a++){robotArm.moveRight();}robotArm.drop(); for(a=0; a<5; a++){robotArm.moveLeft();}} }
+           //  // De door jou opgegeven instructies uitvoeren
 
-           for(c=0; c<2; c++){
-             robotArm.grab();
-             if (robotArm.scan()== "green"){for (a=0; a<5; a++){robotArm.moveRight();}robotArm.drop(); for(a=0; a<5; a++){robotArm.moveLeft();}} }
+
+
+
+           // var blocks=1;
+           // for(a=0; a<4; a++){
+           //   for b=0; b<blockds; b++
+           // }
+           //
+           //
+
+        var e=1;
+         for(a=0; a<4; a++){
+            for(b=0; b<e; b++){
+              robotArm.grab();
+              for(c=0; c<5; c++){
              robotArm.moveRight();
+                               }
+          robotArm.drop();
+                for(d=0; d<5; d++){
+                  robotArm.moveLeft();
+                      }
+                 }
+           e++;
+            robotArm.moveRight();
+                       }
 
-             for(d=0; d<3; d++){
-               robotArm.grab();
-               if (robotArm.scan()== "white"){for (a=0; a<5; a++){robotArm.moveRight();}robotArm.drop(); for(a=0; a<5; a++){robotArm.moveLeft();}} }
-               robotArm.moveRight();
 
-               for(e=0; e<4; e++){
-                 robotArm.grab();
-                 if (robotArm.scan()== "red"){for (a=0; a<5; a++){robotArm.moveRight();}robotArm.drop(); for(a=0; a<5; a++){robotArm.moveLeft();}} }
-            // De door jou opgegeven instructies uitvoeren
 
             robotArm.run();
 

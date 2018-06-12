@@ -11,13 +11,33 @@
             robotArm.loadLevel("exercise 11");
             robotArm.speed = 500;
 
-            for(a=0; a<30; a++){
-            robotArm.moveRight();
+
+            for(a=0; a<8; a++){
+            robotArm.moveRight();}
+
             robotArm.grab();
-            var color = robotArm.scan();
-            // alert(color);
-            if (robotArm.scan()== "white"){robotArm.moveRight(); robotArm.drop();}
-            else {robotArm.drop();}
+          for(b=0; b<8; b++){
+            if (robotArm.scan()=="white"){
+              robotArm.moveRight();
+              robotArm.drop();
+              robotArm.moveLeft();
+              robotArm.moveLeft();
+              robotArm.grab();
+            }
+            else{
+              robotArm.drop();
+              robotArm.moveLeft();
+              robotArm.grab();
+            }
+
+            //
+            // for(a=0; a<30; a++){
+            // robotArm.moveRight();
+            // robotArm.grab();
+            // var color = robotArm.scan();
+            // // alert(color);
+            // if (robotArm.scan()== "white"){robotArm.moveRight(); robotArm.drop();}
+            // else {robotArm.drop();}
 
 
             // if (robotArm.scan() == "white") {
